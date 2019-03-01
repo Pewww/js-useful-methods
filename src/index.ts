@@ -1,3 +1,9 @@
-const testFunc = (a: number, b: number, c = 2) => a + b + c;
+import {
+  compact,
+  join
+} from './lib/Array';
 
-export default testFunc;
+export default {
+  compact,
+  join
+};
