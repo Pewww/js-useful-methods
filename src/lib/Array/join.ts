@@ -4,7 +4,7 @@
  * Converts all elements in array into a string separated by separator.
  */
 
-export const join = (array: [], seperator: string) => {
+export const join = (array: any[], seperator: string) => {
   let s = '';
 
   for (let i = 0, arrLeng = array.length; i < arrLeng; i++) {

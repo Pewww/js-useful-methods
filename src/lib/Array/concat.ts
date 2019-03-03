@@ -4,8 +4,8 @@
  * Problem + Improvement: (Speed) Own concat < Array.prototype.concat
  */
 
-export const concat = (...items: []) => {
-  const newArr: [] = [];
+export const concat = (...items: any[]) => {
+  const newArr: any[] = [];
 
   for (let i = 0, itemsLeng = items.length; i < itemsLeng; i++) {
     if (Array.isArray(items[i])) {

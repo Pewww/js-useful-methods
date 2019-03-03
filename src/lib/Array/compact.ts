@@ -4,6 +4,6 @@
  * The values false, null, 0, "", undefined, and NaN are falsey.
  */
 
-export const compact = (array: []) => {
+export const compact = (array: any[]) => {
   return array.filter(item => !!item);
 };
