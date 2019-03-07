@@ -1,3 +1,4 @@
+import {SECOND} from '../../constants/times';
 import {join} from '../Array/join';
 
 describe('Array - join 메서드 테스트', () => {
@@ -27,7 +28,7 @@ describe('Array - join 메서드 테스트', () => {
     }
     const joinProtoEnd = Date.now();
 
-    const joinProtoTimeSpent = (joinProtoEnd - joinProtoBegin) / 1000;
+    const joinProtoTimeSpent = (joinProtoEnd - joinProtoBegin) / SECOND;
 
     // Own Join Implementation
     const ownProtoBegin = Date.now();
@@ -36,7 +37,7 @@ describe('Array - join 메서드 테스트', () => {
     }
     const ownProtoEnd = Date.now();
 
-    const ownProtoTimeSpent = (ownProtoEnd - ownProtoBegin) / 1000;
+    const ownProtoTimeSpent = (ownProtoEnd - ownProtoBegin) / SECOND;
 
     // Faster than Array.prototype.join
     // But, An accurate test is required.
