@@ -1,4 +1,4 @@
-import {concat} from '../Array/concat';
+import {concat} from '../Array';
 
 describe('Array - concat 메서드 테스트', () => {
   test(`Input: [1], 2, [3], [[4]] => Output: [1, 2, 3, [4]]`, () => {

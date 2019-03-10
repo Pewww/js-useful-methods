@@ -3,6 +3,8 @@ import {
   compact,
   concat,
   difference,
+  drop,
+  dropRight,
   join
 } from './lib/Array';
 
@@ -11,5 +13,7 @@ export default {
   compact,
   concat,
   difference,
+  drop,
+  dropRight,
   join
 };
