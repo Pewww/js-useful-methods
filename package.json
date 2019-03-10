@@ -1,6 +1,6 @@
 {
   "name": "lodash-own",
-  "version": "0.1.93",
+  "version": "0.1.95",
   "description": "My own Lodash library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
