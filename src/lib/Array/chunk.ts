@@ -5,9 +5,7 @@
  * If array can't be split evenly, the final chunk will be the remaining elements.
  */
 
-export const chunk = (array: any[], size: number) => {
-  if (!size) return array;
-
+export const chunk = (array: any[], size: number = 1) => {
   const arr = [], arrLeng = array.length, s = size;
   let start = 0;
 
