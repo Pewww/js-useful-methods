@@ -5,6 +5,7 @@ import {
   difference,
   drop,
   dropRight,
+  dropRightWhile,
   join
 } from './lib/Array';
 
@@ -15,5 +16,6 @@ export default {
   difference,
   drop,
   dropRight,
+  dropRightWhile,
   join
 };
