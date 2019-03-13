@@ -4,6 +4,7 @@ import {concat} from './concat';
 import {difference} from './difference';
 import {drop} from './drop';
 import {dropRight} from './dropRight';
+import {dropRightWhile} from './dropRightWhile';
 import {join} from './join';
 
 export {
@@ -13,5 +14,6 @@ export {
   difference,
   drop,
   dropRight,
+  dropRightWhile,
   join
 };

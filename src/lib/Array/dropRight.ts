@@ -6,8 +6,6 @@
 
 export const dropRight = (array: any[], dropNumber: number = 1) => {
   const arrLeng = array.length;
-  // const dropRange = (arrLeng - dropNumber) < 0 ?
-  //  0 : (arrLeng - dropNumber);
   const dropRange = dropNumber > arrLeng ?
     0 : (arrLeng - dropNumber);
 
