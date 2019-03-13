@@ -1,6 +1,6 @@
 /**
- * @param array
- * @param dropNumber
+ * @param array - The array to query.
+ * @param dropNumber - The number of elements to drop.
  * Creates a slice of array with n elements dropped from the beginning.
  */
 

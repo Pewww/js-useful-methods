@@ -1,6 +1,6 @@
 /**
- * @param array
- * @param size
+ * @param array - The array to process.
+ * @param size - The length of each chunk
  * Creates an array of elements split into groups the length of size.
  * If array can't be split evenly, the final chunk will be the remaining elements.
  */

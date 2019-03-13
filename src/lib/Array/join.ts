@@ -1,6 +1,6 @@
 /**
- * @param array
- * @param seperator
+ * @param array - The array to convert.
+ * @param seperator - The element separator.
  * Converts all elements in array into a string separated by separator.
  */
 

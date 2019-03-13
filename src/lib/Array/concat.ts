@@ -1,5 +1,5 @@
 /**
- * @param items
+ * @param items - The values to concatenate.
  * Creates a new array concatenating array with any additional arrays and/or values.
  * Problem + Improvement: (Speed) Own concat < Array.prototype.concat
  */
