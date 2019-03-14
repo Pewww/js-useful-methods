@@ -5,6 +5,7 @@ import {difference} from './difference';
 import {drop} from './drop';
 import {dropRight} from './dropRight';
 import {dropRightWhile} from './dropRightWhile';
+import {dropWhile} from './dropWhile';
 import {join} from './join';
 
 export {
@@ -15,5 +16,6 @@ export {
   drop,
   dropRight,
   dropRightWhile,
+  dropWhile,
   join
 };
