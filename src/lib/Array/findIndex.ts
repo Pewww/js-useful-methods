@@ -8,7 +8,7 @@
 
 export const findIndex = (
   array: any[],
-  predicate?: (value?: any, index?: number, predicateArray?: any[]) => any,
+  predicate: (value?: any, index?: number, predicateArray?: any[]) => any,
   fromIndex: number = 0
 ) => {
   if (!Array.isArray(array)) {
