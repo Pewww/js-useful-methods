@@ -13,7 +13,7 @@ When the implementation is almost complete, I will also add documentation to hel
 
 ## Implemented Methods
 ### Array
-- <span style="color: white;background:#202020">chunk</span>\
+- <b>chunk</b>\
 Parameters: (array: Array, size: Number)\
 array: The array to process.\
 size(optional): The length of each chunk\
@@ -21,21 +21,21 @@ size(optional): The length of each chunk\
 Creates an array of elements split into groups the length of size.\
 If array can't be split evenly, the final chunk will be the remaining elements.
 
-- compact\
+- <b>compact</b>\
 Parameters: (array: Array)\
 array: The array to compact.\
 \
 Creates an array with all falsey values removed.\
 The values false, null, 0, "", undefined, and NaN are falsey.
 
-- concat\
+- <b>concat</b>\
 Parameters: (items: Array)\
 items: The values to concatenate.\
 \
 Creates a new array concatenating array with any additional arrays and/or values.\
 First Parameter is the array to concatenate.
 
-- difference\
+- <b>difference</b>\
 Parameters: (inspectArray: Array, excludeValues: ...Array)\
 inspectArray: The array to inspect.\
 excludeValues: The values to exclude.\
@@ -43,21 +43,21 @@ excludeValues: The values to exclude.\
 Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons.\
 The order and references of result values are determined by the first array.
 
-- drop\
+- <b>drop</b>\
 Parameters: (array: Array, dropNumber: Number)\
 array: The array to query.\
 dropNumber(optional): The number of elements to drop.\
 \
 Creates a slice of array with n elements dropped from the beginning.
 
-- dropRight\
+- <b>dropRight</b>\
 Parameters: (array: Array, dropNumber: Number)\
 array: The array to query.\
 dropNumber(optional): The number of elements to drop.\
 \
 Creates a slice of array with n elements dropped from the end.
 
-- dropRightWhile\
+- <b>dropRightWhile</b>\
 Parameters: (array: Array, predicate: Function)\
 array: The array to query.\
 predicate(optional): The function invoked per iteration.\
@@ -66,7 +66,7 @@ Creates a slice of array excluding elements dropped from the end.\
 Elements are dropped until predicate returns falsey.\
 The predicate is invoked with three arguments: (value, index, array).
 
-- dropWhile\
+- <b>dropWhile</b>\
 Parameters: (array: Array, predicate: Function)\
 array: The array to query.\
 predicate(optional): The function invoked per iteration.\
@@ -75,7 +75,7 @@ Creates a slice of array excluding elements dropped from the beginning.\
 Elements are dropped until predicate returns falsey.\
 The predicate is invoked with three arguments: (value, index, array).
 
-- findIndex\
+- <b>findIndex</b>\
 Parameters: (array: Array, predicate: Function, fromIndex: Number)\
 array: The array to inspect.\
 predicate: The function invoked per iteration.\
@@ -84,7 +84,7 @@ fromIndex(optional): The index to search from.\
 This method is like _.find except that it returns the index of the first element predicate\
 returns truthy for instead of the element itself.
 
-- join\
+- <b>join</b>\
 Parameters: (array: Array, seperator: String)\
 array: The array to convert.\
 seperator: The element separator.\
