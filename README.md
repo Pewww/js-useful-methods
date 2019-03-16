@@ -13,7 +13,7 @@ When the implementation is almost complete, I will also add documentation to hel
 
 ## Implemented Methods
 ### Array
-- chunk\
+- <span style="color: white;background:#202020">chunk</span>\
 Parameters: (array: Array, size: Number)\
 array: The array to process.\
 size(optional): The length of each chunk\
