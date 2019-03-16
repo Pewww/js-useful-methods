@@ -21,7 +21,7 @@ export const dropWhile = (
   const arrLeng = array.length;
   let arrIndex = 0;
 
-  while ((arrIndex <= arrLeng - 1) && predicate(array[arrIndex], arrIndex, array)) {
+  while ((arrIndex < arrLeng) && predicate(array[arrIndex], arrIndex, array)) {
     arrIndex += 1;
   }
 

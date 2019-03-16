@@ -22,4 +22,4 @@
 # ➕ `:heavy_plus_sign:`  패키지 추가
 # ➖ `:heavy_minus_sign:` 패키지 삭제
 # 👕 `:shirt:`            code 변경 없이 linter warning 삭제
-# 🔖 `:bookmark:`         npm 배포 버전 명시
+# 🔖 `:bookmark:`         npm 배포 버전 명시(Update Version)

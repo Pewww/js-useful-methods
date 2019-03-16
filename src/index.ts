@@ -7,6 +7,7 @@ import {
   dropRight,
   dropRightWhile,
   dropWhile,
+  findIndex,
   join
 } from './lib/Array';
 
@@ -19,5 +20,6 @@ export default {
   dropRight,
   dropRightWhile,
   dropWhile,
+  findIndex,
   join
 };

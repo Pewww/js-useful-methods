@@ -6,6 +6,7 @@ import {drop} from './drop';
 import {dropRight} from './dropRight';
 import {dropRightWhile} from './dropRightWhile';
 import {dropWhile} from './dropWhile';
+import {findIndex} from './findIndex';
 import {join} from './join';
 
 export {
@@ -17,5 +18,6 @@ export {
   dropRight,
   dropRightWhile,
   dropWhile,
+  findIndex,
   join
 };
