@@ -78,11 +78,19 @@ The predicate is invoked with three arguments: (value, index, array).
 - <b>findIndex</b>\
 Parameters: (array: Array, predicate: Function, fromIndex: Number)\
 array: The array to inspect.\
-predicate: The function invoked per iteration.\
+predicate(optional): The function invoked per iteration.\
 fromIndex(optional): The index to search from.\
 \
 This method is like _.find except that it returns the index of the first element predicate\
 returns truthy for instead of the element itself.
+
+- <b>findLastIndex</b>\
+Parameters: (array: Array, predicate: Function, fromIndex: Number)\
+array: The array to inspect.\
+predicate(optional): The function invoked per iteration.\
+fromIndex(optional): The index to search from.\
+\
+This method is like _.findIndex except that it iterates over elements of collection from right to left.
 
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
