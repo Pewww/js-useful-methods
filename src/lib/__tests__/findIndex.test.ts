@@ -1,6 +1,11 @@
-import {findIndex} from '../Array/findIndex';
+import {findIndex} from '../Array';
 
 describe('Array - findIndex 메서드 테스트', () => {
+  test('[1, 2, 3, 4, 5]와 같이 array만 주어질 때 0 반환', () => {
+    const arr = [1, 2, 3, 4, 5];
+    expect(findIndex(arr)).toBe(0);
+  });
+
   test('array: [1, 2, 3, 4, 5], predicate: v => v === 5 일 때, 4 반환', () => {
     const arr = [1, 2, 3, 4, 5];
     
