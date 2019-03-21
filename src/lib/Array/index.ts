@@ -8,6 +8,7 @@ import {dropRightWhile} from './dropRightWhile';
 import {dropWhile} from './dropWhile';
 import {findIndex} from './findIndex';
 import {findLastIndex} from './findLastIndex';
+import {flatten} from './flatten';
 import {join} from './join';
 
 export {
@@ -21,5 +22,6 @@ export {
   dropWhile,
   findIndex,
   findLastIndex,
+  flatten,
   join
 };

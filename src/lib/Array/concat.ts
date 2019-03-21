@@ -10,10 +10,12 @@ export const concat = (...items: any[]) => {
   const newArr = [];
 
   for (let i = 0, itemsLeng = items.length; i < itemsLeng; i++) {
-    if (Array.isArray(items[i])) {
-      pushSpreadArray(newArr, items[i]);
+    const itemVal = items[i];
+
+    if (Array.isArray(itemVal)) {
+      pushSpreadArray(newArr, itemVal);
     } else {
-      newArr.push(items[i]);
+      newArr.push(itemVal);
     }
   }
 

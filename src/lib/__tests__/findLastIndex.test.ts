@@ -1,4 +1,4 @@
-import {findLastIndex} from '../Array';
+import {findLastIndex} from '../Array/findLastIndex';
 
 describe('Array - findLastIndex 메서드 테스트', () => {
   test('[1, 2, 3, 4, 5]와 같이 array만 주어질 때 4 반환', () => {

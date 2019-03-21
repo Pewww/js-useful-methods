@@ -9,6 +9,7 @@ import {
   dropWhile,
   findIndex,
   findLastIndex,
+  flatten,
   join
 } from './lib/Array';
 
@@ -23,5 +24,6 @@ export default {
   dropWhile,
   findIndex,
   findLastIndex,
+  flatten,
   join
 };

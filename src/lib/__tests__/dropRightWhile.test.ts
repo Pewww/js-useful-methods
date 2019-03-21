@@ -1,4 +1,4 @@
-import {dropRightWhile} from '../Array';
+import {dropRightWhile} from '../Array/dropRightWhile';
 
 interface IUser {
   active: boolean;

@@ -2,7 +2,7 @@ import {
   IPerson,
   IUser
 } from '../../types';
-import {dropWhile} from '../Array';
+import {dropWhile} from '../Array/dropWhile';
 
 
 describe('Array - dropWhile 메서드 테스트', () => {

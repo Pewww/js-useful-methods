@@ -1,4 +1,4 @@
-import {compact} from '../Array';
+import {compact} from '../Array/compact';
 
 describe('Array - compact 메서드 테스트', () => {
   test(`Input: [0, 1, false, 2, '', 3] => Output: [1, 2, 3]`, () => {

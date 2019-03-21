@@ -1,4 +1,4 @@
-import {drop} from '../Array';
+import {drop} from '../Array/drop';
 
 describe('Array - drop 메서드 테스트', () => {
   test('Input: ([1, 2, 3]) 일 시 Output: [2, 3]', () => {

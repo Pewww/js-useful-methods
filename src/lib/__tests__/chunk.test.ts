@@ -1,4 +1,4 @@
-import {chunk} from '../Array';
+import {chunk} from '../Array/chunk';
 
 describe('Array - chunk 메서드 테스트', () => {
   test(`['a', 'b', 'c', 'd'] 배열 1개씩 chunk`, () => {

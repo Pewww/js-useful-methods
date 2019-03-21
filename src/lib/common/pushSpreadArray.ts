@@ -5,6 +5,10 @@
  */
 
 export const pushSpreadArray = (array: any[], values: any[]) => {
+  if (!Array.isArray(array) || !Array.isArray(values)) {
+    throw new TypeError('All parameters should be Array.');
+  }
+
   const arrLeng = array.length,
         valLeng = values.length;
   let idx = 0;
