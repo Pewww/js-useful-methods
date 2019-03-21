@@ -92,6 +92,12 @@ fromIndex(optional): The index to search from.\
 \
 This method is like _.findIndex except that it iterates over elements of collection from right to left.
 
+- <b>flatten</b>\
+Parameters: (array: Array)\
+array: The array to flatten.\
+\
+Flattens array a single level deep.
+
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
 array: The array to convert.\
