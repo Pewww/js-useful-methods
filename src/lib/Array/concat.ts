@@ -4,12 +4,14 @@
  * First Parameter is the array to concatenate.
  */
 
+import {pushSpreadArray} from '../common/pushSpreadArray';
+
 export const concat = (...items: any[]) => {
   const newArr = [];
 
   for (let i = 0, itemsLeng = items.length; i < itemsLeng; i++) {
     if (Array.isArray(items[i])) {
-      newArr.push.apply(newArr, items[i]);
+      pushSpreadArray(newArr, items[i]);
     } else {
       newArr.push(items[i]);
     }
