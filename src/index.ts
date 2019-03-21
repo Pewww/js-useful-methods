@@ -10,6 +10,7 @@ import {
   findIndex,
   findLastIndex,
   flatten,
+  head,
   join
 } from './lib/Array';
 
@@ -25,5 +26,6 @@ export default {
   findIndex,
   findLastIndex,
   flatten,
+  head,
   join
 };

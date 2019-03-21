@@ -98,6 +98,12 @@ array: The array to flatten.\
 \
 Flattens array a single level deep.
 
+- <b>head</b>\
+Parameters: (array: Array)\
+array: The array to query.\
+\
+Gets the first element of array.
+
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
 array: The array to convert.\

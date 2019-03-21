@@ -9,6 +9,7 @@ import {dropWhile} from './dropWhile';
 import {findIndex} from './findIndex';
 import {findLastIndex} from './findLastIndex';
 import {flatten} from './flatten';
+import {head} from './head';
 import {join} from './join';
 
 export {
@@ -23,5 +24,6 @@ export {
   findIndex,
   findLastIndex,
   flatten,
+  head,
   join
 };
