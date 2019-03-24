@@ -98,6 +98,12 @@ array: The array to flatten.\
 \
 Flattens array a single level deep.
 
+- <b>flattenDeep</b>\
+Parameters: (array: Array)\
+array: The array to flatten.\
+\
+Recursively flattens array.
+
 - <b>head</b>\
 Parameters: (array: Array)\
 array: The array to query.\

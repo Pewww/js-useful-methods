@@ -1,6 +1,6 @@
 /**
  * @param array - The array to flatten.
- * Returns the new flattened array.
+ * Recursively flattens array.
  */
 
 export const flattenDeep = (array: any[]) => {
