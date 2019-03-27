@@ -104,6 +104,13 @@ array: The array to flatten.\
 \
 Recursively flattens array.
 
+- <b>flattenDepth</b>\
+Parameters: (array: Array, depth: Number)\
+array: The array to flatten.\
+depth(optional): The maximum recursion depth.\
+\
+Returns the new flattened array.
+
 - <b>head</b>\
 Parameters: (array: Array)\
 array: The array to query.\
