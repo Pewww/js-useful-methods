@@ -11,6 +11,7 @@ import {
   findLastIndex,
   flatten,
   flattenDeep,
+  flattenDepth,
   head,
   join
 } from './lib/Array';
@@ -28,6 +29,7 @@ export default {
   findLastIndex,
   flatten,
   flattenDeep,
+  flattenDepth,
   head,
   join
 };
