@@ -12,6 +12,7 @@ import {flatten} from './flatten';
 import {flattenDeep} from './flattenDeep';
 import {flattenDepth} from './flattenDepth';
 import {head} from './head';
+import {indexOf} from './indexOf';
 import {join} from './join';
 
 export {
@@ -29,5 +30,6 @@ export {
   flattenDeep,
   flattenDepth,
   head,
+  indexOf,
   join
 };

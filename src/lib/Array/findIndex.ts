@@ -12,7 +12,7 @@ export const findIndex = (
   fromIndex: number = 0
 ) => {
   if (!Array.isArray(array)) {
-    return null;
+    return -1;
   }
 
   if (typeof predicate !== 'function') {

@@ -10,7 +10,7 @@ export const flattenDepth = (array: any[], depth: number = 1) => {
     }
   
     const depthFlattenedArr = [];
-    const substantiveDepth = (Number(depth) && depth >= 1) ? depth : 1;
+    const substantiveDepth = (Number(depth) && depth > 0) ? depth : 1;
   
     (function _flattenDepth(arr, flatDepth) {
       for (let i = 0, arrLeng = arr.length; i < arrLeng; i++) {

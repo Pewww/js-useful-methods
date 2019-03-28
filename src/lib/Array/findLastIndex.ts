@@ -11,7 +11,7 @@ export const findLastIndex = (
   fromIndex: number = array.length - 1
 ) => {
   if (!Array.isArray(array)) {
-    return null;
+    return -1;
   }
 
   const arrLeng = array.length;

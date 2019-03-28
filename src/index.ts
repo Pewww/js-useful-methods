@@ -13,6 +13,7 @@ import {
   flattenDeep,
   flattenDepth,
   head,
+  indexOf,
   join
 } from './lib/Array';
 
@@ -31,5 +32,6 @@ export default {
   flattenDeep,
   flattenDepth,
   head,
+  indexOf,
   join
 };
