@@ -117,6 +117,15 @@ array: The array to query.\
 \
 Gets the first element of array.
 
+- <b>indexOf</b>\
+Parameters: (array: Array, value: *, fromIndex: Number)\
+array: The array to inspect.\
+value: The value to search for.\
+fromIndex: The index to search from.\
+\
+Gets the index at which the first occurrence of value is found in array using SameValueZero for equality comparisons.\
+If fromIndex is negative, it's used as the offset from the end of array.
+
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
 array: The array to convert.\
