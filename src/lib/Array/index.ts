@@ -13,6 +13,7 @@ import {flattenDeep} from './flattenDeep';
 import {flattenDepth} from './flattenDepth';
 import {head} from './head';
 import {indexOf} from './indexOf';
+import {initial} from './initial';
 import {join} from './join';
 
 export {
@@ -31,5 +32,6 @@ export {
   flattenDepth,
   head,
   indexOf,
+  initial,
   join
 };

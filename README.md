@@ -121,10 +121,16 @@ Gets the first element of array.
 Parameters: (array: Array, value: *, fromIndex: Number)\
 array: The array to inspect.\
 value: The value to search for.\
-fromIndex: The index to search from.\
+fromIndex(optional): The index to search from.\
 \
 Gets the index at which the first occurrence of value is found in array using SameValueZero for equality comparisons.\
 If fromIndex is negative, it's used as the offset from the end of array.
+
+- <b>initial</b>\
+Parameters: (array: Array)\
+array: The array to query.\
+\
+Gets all but the last element of array.
 
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
