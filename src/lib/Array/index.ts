@@ -15,6 +15,7 @@ import {head} from './head';
 import {indexOf} from './indexOf';
 import {initial} from './initial';
 import {join} from './join';
+import {last} from './last';
 
 export {
   chunk,
@@ -33,5 +34,6 @@ export {
   head,
   indexOf,
   initial,
-  join
+  join,
+  last
 };
