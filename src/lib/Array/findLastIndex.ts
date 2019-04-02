@@ -8,7 +8,7 @@
 export const findLastIndex = (
   array: any[],
   predicate?: (value?: any, index?: number, predicateArray?: any[]) => any,
-  fromIndex: number = array.length - 1
+  fromIndex: number = array && array.length - 1
 ) => {
   if (!Array.isArray(array)) {
     return -1;

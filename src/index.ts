@@ -16,7 +16,8 @@ import {
   indexOf,
   initial,
   join,
-  last
+  last,
+  lastIndexOf
 } from './lib/Array';
 
 export default {
@@ -37,5 +38,6 @@ export default {
   indexOf,
   initial,
   join,
-  last
+  last,
+  lastIndexOf
 };
