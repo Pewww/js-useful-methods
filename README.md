@@ -145,6 +145,15 @@ array: The array to query.\
 \
 Gets the last element of array.
 
+- <b>lastIndexOf</b>\
+Parameters: (array: Array, value: *, fromIndex: Number)\
+array: The array to inspect.\
+value: The value to search for.\
+fromIndex(optional): The index to search from.\
+\
+This method is like _.indexOf except that it iterates over elements of array from right to left.\
+If fromIndex is negative, it's used as the offset from the end of array.
+
 ## ETC
 성능이나 구조, 더욱 깔끔한 코드에 관한 이슈는 언제나 환영입니다!<br>
 Issues regarding performance, structure, and cleaner code are always welcome!
