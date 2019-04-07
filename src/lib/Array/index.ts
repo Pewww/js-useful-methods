@@ -18,6 +18,7 @@ import {intersection} from './intersection';
 import {join} from './join';
 import {last} from './last';
 import {lastIndexOf} from './lastIndexOf';
+import {nth} from './nth';
 
 export {
   chunk,
@@ -39,5 +40,6 @@ export {
   intersection,
   join,
   last,
-  lastIndexOf
+  lastIndexOf,
+  nth
 };

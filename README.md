@@ -132,6 +132,13 @@ array: The array to query.\
 \
 Gets all but the last element of array.
 
+- <b>intersection</b>\
+Parameters: (arrays: ...Array)\
+array: The arrays to inspect.\
+\
+Creates an array of unique values that are included in all given arrays using SameValueZero for equality comparisons.\
+The order and references of result values are determined by the first array.
+
 - <b>join</b>\
 Parameters: (array: Array, seperator: String)\
 array: The array to convert.\
@@ -153,6 +160,14 @@ fromIndex(optional): The index to search from.\
 \
 This method is like _.indexOf except that it iterates over elements of array from right to left.\
 If fromIndex is negative, it's used as the offset from the end of array.
+
+- <b>nth</b>\
+Parameters: (array: Array, n: Number)\
+array: The array to query.\
+n(optional): The index of the element to return.\
+\
+Gets the element at index n of array.\
+If n is negative, the nth element from the end is returned.
 
 ## ETC
 성능이나 구조, 더욱 깔끔한 코드에 관한 이슈는 언제나 환영입니다!<br>

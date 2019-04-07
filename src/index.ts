@@ -18,7 +18,8 @@ import {
   intersection,
   join,
   last,
-  lastIndexOf
+  lastIndexOf,
+  nth
 } from './lib/Array';
 
 export default {
@@ -41,5 +42,6 @@ export default {
   intersection,
   join,
   last,
-  lastIndexOf
+  lastIndexOf,
+  nth
 };
