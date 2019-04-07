@@ -15,6 +15,7 @@ import {
   head,
   indexOf,
   initial,
+  intersection,
   join,
   last,
   lastIndexOf
@@ -37,6 +38,7 @@ export default {
   head,
   indexOf,
   initial,
+  intersection,
   join,
   last,
   lastIndexOf

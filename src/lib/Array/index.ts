@@ -14,6 +14,7 @@ import {flattenDepth} from './flattenDepth';
 import {head} from './head';
 import {indexOf} from './indexOf';
 import {initial} from './initial';
+import {intersection} from './intersection';
 import {join} from './join';
 import {last} from './last';
 import {lastIndexOf} from './lastIndexOf';
@@ -35,6 +36,7 @@ export {
   head,
   indexOf,
   initial,
+  intersection,
   join,
   last,
   lastIndexOf
