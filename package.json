@@ -1,7 +1,7 @@
 {
   "name": "lodash-own",
-  "version": "0.2.21",
-  "description": "My own Lodash library",
+  "version": "0.2.22",
+  "description": "Pewww's own Lodash library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

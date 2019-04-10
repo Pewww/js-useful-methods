@@ -169,7 +169,7 @@ n(optional): The index of the element to return.\
 Gets the element at index n of array.\
 If n is negative, the nth element from the end is returned.
 
-- <b>nth</b>\
+- <b>pull</b>\
 Parameters: (array: Array, ...values: *)\
 array: The array to modify.\
 values: The values to remove.\
