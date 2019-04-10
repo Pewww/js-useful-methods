@@ -169,6 +169,15 @@ n(optional): The index of the element to return.\
 Gets the element at index n of array.\
 If n is negative, the nth element from the end is returned.
 
+- <b>nth</b>\
+Parameters: (array: Array, ...values: *)\
+array: The array to modify.\
+values: The values to remove.\
+\
+Removes all given values from array using SameValueZero for equality comparisons.\
+Unlike _.without, this method mutates array.\
+Use _.remove to remove elements from an array by predicate.
+
 ## ETC
 성능이나 구조, 더욱 깔끔한 코드에 관한 이슈는 언제나 환영입니다!<br>
 Issues regarding performance, structure, and cleaner code are always welcome!
