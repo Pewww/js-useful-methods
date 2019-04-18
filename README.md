@@ -178,6 +178,14 @@ Removes all given values from array using SameValueZero for equality comparisons
 Unlike _.without, this method mutates array.\
 Use _.remove to remove elements from an array by predicate.
 
+- <b>remove</b>\
+Parameters: (array: Array, predicate: Function)\
+array: The array to modify.\
+predicate: The function invoked per iteration.\
+\
+Removes all elements from array that predicate returns truthy for and returns an array of the removed elements.\
+The predicate is invoked with three arguments: (value, index, array).
+
 ## ETC
 성능이나 구조, 더욱 깔끔한 코드에 관한 이슈는 언제나 환영입니다!<br>
 Issues regarding performance, structure, and cleaner code are always welcome!

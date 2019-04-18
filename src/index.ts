@@ -20,7 +20,8 @@ import {
   last,
   lastIndexOf,
   nth,
-  pull
+  pull,
+  remove
 } from './lib/Array';
 
 export default {
@@ -45,5 +46,6 @@ export default {
   last,
   lastIndexOf,
   nth,
-  pull
+  pull,
+  remove
 };
