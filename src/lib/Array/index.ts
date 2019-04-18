@@ -20,6 +20,7 @@ import {last} from './last';
 import {lastIndexOf} from './lastIndexOf';
 import {nth} from './nth';
 import {pull} from './pull';
+import {remove} from './remove';
 
 export {
   chunk,
@@ -43,5 +44,6 @@ export {
   last,
   lastIndexOf,
   nth,
-  pull
+  pull,
+  remove
 };

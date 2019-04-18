@@ -1,4 +1,4 @@
-import {intersection} from '../Array/intersection';
+import {intersection} from '../Array';
 
 describe('Array - intersection 메서드 테스트', () => {
   test('하나라도 배열이 아닌 값이 들어갈 시, 빈 배열 반환', () => {

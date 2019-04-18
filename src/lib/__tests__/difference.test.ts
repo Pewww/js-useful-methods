@@ -1,4 +1,4 @@
-import {difference} from '../Array/difference';
+import {difference} from '../Array';
 
 describe('Array - difference 메서드 테스트', () => {
   test(`Input: Array - [2, 1, 45, 'a'], Values - [2, 3, 4, 'a']일 때, Output: [1, 45]`, () => {

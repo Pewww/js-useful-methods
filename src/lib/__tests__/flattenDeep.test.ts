@@ -1,4 +1,4 @@
-import {flattenDeep} from '../Array/flattenDeep';
+import {flattenDeep} from '../Array';
 
 describe('Array - flattenDeep 메서드 테스트', () => {
   test('파라미터가 배열이 아닐 시 null 반환', () => {

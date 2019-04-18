@@ -1,5 +1,5 @@
 import {SECOND} from '../../constants/times';
-import {join} from '../Array/join';
+import {join} from '../Array';
 
 describe('Array - join 메서드 테스트', () => {
   test(`Join Array with ''(empty string) seperator`, () => {

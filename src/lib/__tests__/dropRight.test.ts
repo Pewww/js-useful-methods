@@ -1,4 +1,4 @@
-import {dropRight} from '../Array/dropRight';
+import {dropRight} from '../Array';
 
 describe('Array - dropRight 메서드 테스트', () => {
   test('Input: ([1, 2, 3]) 일 때, Output: [1, 2]', () => {

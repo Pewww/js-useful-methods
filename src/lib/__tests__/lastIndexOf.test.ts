@@ -1,4 +1,4 @@
-import {lastIndexOf} from '../Array/lastIndexOf';
+import {lastIndexOf} from '../Array';
 
 describe('Array - lastIndexOf 메서드 테스트', () => {
   test('첫 번째 파라미터(array)의 타입이 Array가 아닐 시 -1 반환', () => {

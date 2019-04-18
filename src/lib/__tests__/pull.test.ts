@@ -1,4 +1,4 @@
-import {pull} from '../Array/pull';
+import {pull} from '../Array';
 
 describe('Array - pull 메서드 테스트', () => {
   test('첫 번째 파라미터의 타입이 Array가 아닐 시, 그대로 값 반환', () => {

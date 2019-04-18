@@ -1,4 +1,4 @@
-import {nth} from '../Array/nth';
+import {nth} from '../Array';
 
 describe('Array - nth 메서드 테스트', () => {
   test('파라미터의 타입이 배열이 아닐 시 undefined 반환', () => {

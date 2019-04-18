@@ -1,4 +1,4 @@
-import {flatten} from '../Array/flatten';
+import {flatten} from '../Array';
 
 describe('Array - flatten 메서드 테스트', () => {
   test('Input: [1, 2, 3, 4, [5], [6, [7]]] 일 때, Output: [1, 2, 3, 4, 5, 6, [7]]', () => {

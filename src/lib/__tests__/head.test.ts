@@ -1,4 +1,4 @@
-import {head} from '../Array/head';
+import {head} from '../Array';
 
 describe('Array - head 메서드 테스트', () => {
   test('파라미터가 배열이 아닐 시 undefined 반환', () => {

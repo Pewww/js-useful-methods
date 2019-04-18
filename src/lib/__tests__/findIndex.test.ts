@@ -1,4 +1,4 @@
-import {findIndex} from '../Array/findIndex';
+import {findIndex} from '../Array';
 
 describe('Array - findIndex 메서드 테스트', () => {
   test('[1, 2, 3, 4, 5]와 같이 array만 주어질 때 0 반환', () => {

@@ -1,4 +1,4 @@
-import {flattenDepth} from '../Array/flattenDepth';
+import {flattenDepth} from '../Array';
 
 describe('Array - flattenDepth 메서드 테스트', () => {
   test('array: [1, [2, [3, [4]], 5]] 이고, depth가 주어지지 않았을 시 [1, 2, [3, [4]], 5] 반환 (depth = 1과 같음)', () => {

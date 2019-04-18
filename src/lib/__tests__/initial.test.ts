@@ -1,4 +1,4 @@
-import {initial} from '../Array/initial';
+import {initial} from '../Array';
 
 describe('Array - initial 메서드 테스트', () => {
   test('파라미터 (array)가 Array 타입이 아닐 시, [] 반환', () => {
