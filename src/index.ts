@@ -23,8 +23,12 @@ import {
   pull,
   remove
 } from './lib/Array';
+import {
+  characterNotation
+} from './lib/etc';
 
 export default {
+  characterNotation, // etc method
   chunk,
   compact,
   concat,
