@@ -11,6 +11,28 @@ Basically, I will implement primitive types of methods first, and then complete 
 얼추 구현이 마무리되면 실제 사용에 이해를 돕는 Documentation도 추가할 예정입니다.<br>
 When the implementation is almost complete, I will also add documentation to help you understand the actual use.
 
+## Installation
+Using npm:
+```shell
+$ npm i lodash-own
+```
+Using yarn:
+```shell
+$ yarn add lodash-own
+```
+
+In Node.js:
+```shell
+Ex. var _ = require('lodash-own').default;
+_.difference([1, 2, 3], [1, 2]); // [3]
+```
+
+If you can use 'Import':
+```shell
+Ex. import _ from 'lodash-own';
+_.flatten([1, 2, [3], [4, 5]]); // [1, 2, 3, 4, 5]
+```
+
 ## Implemented Methods
 ### Array
 - <b>chunk</b>\
@@ -186,6 +208,7 @@ predicate: The function invoked per iteration.\
 Removes all elements from array that predicate returns truthy for and returns an array of the removed elements.\
 The predicate is invoked with three arguments: (value, index, array).
 
+##
 ### Etc
 - <b>characterNotation</b>\
 Parameters: (str: String, unit: Number, character: String)\
