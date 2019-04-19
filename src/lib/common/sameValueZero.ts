@@ -5,5 +5,5 @@
  */
 
 export const sameValueZero = (x: any, y: any) => {
-  return (x === y) || Object.is(x, y);
+  return x === y || Object.is(x, y);
 };

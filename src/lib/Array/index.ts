@@ -45,5 +45,5 @@ export {
   lastIndexOf,
   nth,
   pull,
-  remove
+  remove,
 };

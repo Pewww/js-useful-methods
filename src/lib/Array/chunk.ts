@@ -6,7 +6,9 @@
  */
 
 export const chunk = (array: any[], size: number = 1) => {
-  const arr = [], arrLeng = array.length, s = size;
+  const arr = [],
+    arrLeng = array.length,
+    s = size;
   let start = 0;
 
   while (start < arrLeng) {
@@ -15,4 +17,4 @@ export const chunk = (array: any[], size: number = 1) => {
   }
 
   return arr;
-}
+};

@@ -9,7 +9,7 @@
 export const findIndex = (
   array: any[],
   predicate?: (value?: any, index?: number, predicateArray?: any[]) => any,
-  fromIndex: number = 0
+  fromIndex: number = 0,
 ) => {
   if (!Array.isArray(array)) {
     return -1;
@@ -20,9 +20,9 @@ export const findIndex = (
   }
 
   const arrLeng = array.length;
-  let arrIndex = (Number(fromIndex) && fromIndex > 0) ? fromIndex : 0;
+  let arrIndex = Number(fromIndex) && fromIndex > 0 ? fromIndex : 0;
 
-  while ((arrIndex < arrLeng) && !predicate(array[arrIndex], arrIndex, array)) {
+  while (arrIndex < arrLeng && !predicate(array[arrIndex], arrIndex, array)) {
     arrIndex += 1;
   }
 

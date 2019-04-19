@@ -6,10 +6,7 @@
  * The predicate is invoked with three arguments: (value, index, array).
  */
 
-export const dropWhile = (
-  array: any[],
-  predicate?: (value?: any, index?: number, predicateArray?: any[]) => any
-) => {
+export const dropWhile = (array: any[], predicate?: (value?: any, index?: number, predicateArray?: any[]) => any) => {
   if (!Array.isArray(array)) {
     return null;
   }
@@ -21,7 +18,7 @@ export const dropWhile = (
   const arrLeng = array.length;
   let arrIndex = 0;
 
-  while ((arrIndex < arrLeng) && predicate(array[arrIndex], arrIndex, array)) {
+  while (arrIndex < arrLeng && predicate(array[arrIndex], arrIndex, array)) {
     arrIndex += 1;
   }
 

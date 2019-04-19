@@ -11,7 +11,7 @@ export const difference = (inspectArray: any[], excludeValues: any[]) => {
 
   for (let i = 0, valsLeng = excludeValues.length; i < valsLeng; i++) {
     const val = excludeValues[i];
-    excludeObj[val] = val; 
+    excludeObj[val] = val;
   }
 
   for (let j = 0, arrLeng = inspectArray.length; j < arrLeng; j++) {

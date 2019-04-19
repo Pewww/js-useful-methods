@@ -25,7 +25,7 @@ describe('Array - indexOf 메서드 테스트', () => {
 
     expect(indexOf(arr, NaN)).toBe(3);
   });
-  
+
   test('value가 array의 item과 같은 형태의 배열일 시 -1 반환', () => {
     const arr = [1, 2, 3, 4, [5]];
 

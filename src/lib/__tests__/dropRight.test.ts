@@ -16,7 +16,7 @@ describe('Array - dropRight 메서드 테스트', () => {
     expect(dropRight(arr, 5)).toEqual([]);
   });
 
-  test ('Input: ([1, 2, 3], 0) 일 때, Output: [1, 2, 3]', () => {
+  test('Input: ([1, 2, 3], 0) 일 때, Output: [1, 2, 3]', () => {
     const arr = [1, 2, 3];
     expect(dropRight(arr, 0)).toEqual(arr);
   });
@@ -25,16 +25,16 @@ describe('Array - dropRight 메서드 테스트', () => {
     const arr = [
       {
         a: 1,
-        b: 2
+        b: 2,
       },
       {
         c: 3,
-        d: 4
+        d: 4,
       },
       {
         e: 5,
-        f: 6
-      }
+        f: 6,
+      },
     ];
     expect(dropRight(arr, 2)).toEqual([{a: 1, b: 2}]);
   });

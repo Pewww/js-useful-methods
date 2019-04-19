@@ -9,13 +9,11 @@ describe('Array - join 메서드 테스트', () => {
     expect(joinedArr).toEqual(arr.join(''));
   });
 
-  test (`Join Array with '0' operator`, () => {
+  test(`Join Array with '0' operator`, () => {
     const arr = new Array(10000).fill('Hello');
     const joinedArr = join(arr, '0');
 
-    expect(joinedArr).toEqual(
-      arr.reduce((prev, next) => prev + '0' + next)
-    );
+    expect(joinedArr).toEqual(arr.reduce((prev, next) => prev + '0' + next));
   });
 
   test(`Speed Test with Array.prototype.join`, () => {

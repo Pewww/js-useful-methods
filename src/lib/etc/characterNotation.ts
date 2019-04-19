@@ -11,7 +11,7 @@ export const characterNotation = (str: string, unit: number, character: string) 
     return str;
   }
 
-  const criteriaUnit = (Number(unit) && unit > 0) ? unit : 1;
+  const criteriaUnit = Number(unit) && unit > 0 ? unit : 1;
   let criteriaIdx = str.length - criteriaUnit;
 
   while (criteriaIdx > 0) {

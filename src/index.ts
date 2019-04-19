@@ -21,11 +21,9 @@ import {
   lastIndexOf,
   nth,
   pull,
-  remove
+  remove,
 } from './lib/Array';
-import {
-  characterNotation
-} from './lib/etc';
+import {characterNotation} from './lib/etc';
 
 export default {
   characterNotation, // etc method
@@ -51,5 +49,5 @@ export default {
   lastIndexOf,
   nth,
   pull,
-  remove
+  remove,
 };

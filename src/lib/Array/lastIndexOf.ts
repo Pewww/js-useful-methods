@@ -7,11 +7,7 @@
 
 import {sameValueZero} from '../common/sameValueZero';
 
-export const lastIndexOf = (
-  array: any[],
-  value: any,
-  fromIndex: number = array && array.length - 1
-) => {
+export const lastIndexOf = (array: any[], value: any, fromIndex: number = array && array.length - 1) => {
   if (!Array.isArray(array)) {
     return -1;
   }
@@ -20,13 +16,12 @@ export const lastIndexOf = (
   let arrIndex;
 
   if (Number(fromIndex)) {
-    arrIndex = fromIndex < 0 ?
-      ((arrLeng - 1) + fromIndex) : fromIndex;
+    arrIndex = fromIndex < 0 ? arrLeng - 1 + fromIndex : fromIndex;
   } else {
     arrIndex = arrLeng - 1;
   }
 
-  while ((arrIndex >= 0) && !sameValueZero(array[arrIndex], value)) {
+  while (arrIndex >= 0 && !sameValueZero(array[arrIndex], value)) {
     arrIndex -= 1;
   }
 

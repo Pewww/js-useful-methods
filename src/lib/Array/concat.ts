@@ -20,4 +20,4 @@ export const concat = (...items: any[]) => {
   }
 
   return newArr;
-}
+};

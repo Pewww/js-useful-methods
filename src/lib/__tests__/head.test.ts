@@ -7,7 +7,7 @@ describe('Array - head 메서드 테스트', () => {
 
   test('Input: [1, 2, 3, 4, 5] 일 때, Output: 1', () => {
     const arr = [1, 2, 3, 4, 5];
-    
+
     expect(head(arr)).toBe(1);
   });
 
@@ -15,10 +15,10 @@ describe('Array - head 메서드 테스트', () => {
     const arr = [
       {
         age: 20,
-        name: 'Pewww'
+        name: 'Pewww',
       },
       'hello',
-      10
+      10,
     ];
 
     expect(head(arr)).toEqual({age: 20, name: 'Pewww'});

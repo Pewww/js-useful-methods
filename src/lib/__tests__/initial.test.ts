@@ -15,10 +15,7 @@ describe('Array - initial 메서드 테스트', () => {
   });
 
   test(`array: [{name: 'Pewww'}, {age: 20}] 일 때, [{name: 'Pewww'}] 반환`, () => {
-    const arr = [
-      {name: 'Pewww'},
-      {age: 20}
-    ];
+    const arr = [{name: 'Pewww'}, {age: 20}];
 
     expect(initial(arr)).toEqual([{name: 'Pewww'}]);
   });

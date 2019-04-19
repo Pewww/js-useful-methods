@@ -1,5 +1,3 @@
 import {characterNotation} from './characterNotation';
 
-export {
-  characterNotation
-};
+export {characterNotation};

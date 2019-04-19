@@ -5,11 +5,7 @@ describe('Array - remove 메서드 테스트', () => {
     const firstParams = [1, 'string', NaN, undefined, null, {a: 1}];
     const predicate = (v: any) => v === 1;
 
-    const mapped = firstParams.map(
-      (v: any) => remove(v, predicate)
-    ).every(v =>
-      (Array.isArray(v) && !v.length)
-    );
+    const mapped = firstParams.map((v: any) => remove(v, predicate)).every(v => Array.isArray(v) && !v.length);
 
     expect(mapped).toBe(true);
   });
@@ -18,11 +14,7 @@ describe('Array - remove 메서드 테스트', () => {
     const arr = [1, 2, 3];
     const secondParams = [1, 'string', NaN, undefined, null, {a: 1}];
 
-    const mapped = secondParams.map(
-      (v: any) => remove(arr, v)
-    ).every(v =>
-      (Array.isArray(v) && !v.length)
-    );
+    const mapped = secondParams.map((v: any) => remove(arr, v)).every(v => Array.isArray(v) && !v.length);
 
     expect(mapped).toBe(true);
   });
@@ -38,7 +30,7 @@ describe('Array - remove 메서드 테스트', () => {
 
   test('array: [1, 2, 3, 4, 5], predicate: ((v, idx) => v === 2 || idx === 2) 일 시, [2, 3] 반환 및 array: [1, 4, 5]로 변환', () => {
     const arr = [1, 2, 3, 4, 5];
-    const predicate = (v: any, idx: number) => (v === 2 || idx === 2);
+    const predicate = (v: any, idx: number) => v === 2 || idx === 2;
     const removedArr = remove(arr, predicate as any);
 
     expect(arr).toEqual([1, 4, 5]);

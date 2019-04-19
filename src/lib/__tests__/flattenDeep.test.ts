@@ -27,7 +27,7 @@ describe('Array - flattenDeep 메서드 테스트', () => {
       arr.push(...args);
       arr.push({
         age: 20,
-        name: 'Pewww'
+        name: 'Pewww',
       });
 
       return arr;

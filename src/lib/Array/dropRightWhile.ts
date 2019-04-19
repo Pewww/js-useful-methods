@@ -8,7 +8,7 @@
 
 export const dropRightWhile = (
   array: any[],
-  predicate?: (value?: any, index?: number, predicateArray?: any[]) => any
+  predicate?: (value?: any, index?: number, predicateArray?: any[]) => any,
 ) => {
   if (!Array.isArray(array)) {
     return null;

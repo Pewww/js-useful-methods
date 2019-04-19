@@ -1,9 +1,5 @@
-import {
-  IPerson,
-  IUser
-} from '../../types';
+import {IPerson, IUser} from '../../types';
 import {dropWhile} from '../Array';
-
 
 describe('Array - dropWhile 메서드 테스트', () => {
   test('첫 번째 파라미터(array)가 배열이 아닌 경우 null 반환', () => {
@@ -23,12 +19,12 @@ describe('Array - dropWhile 메서드 테스트', () => {
     const personArr = [
       {
         age: 19,
-        name: 'minsu'
+        name: 'minsu',
       },
       {
         age: 21,
-        name: 'sujin'
-      }
+        name: 'sujin',
+      },
     ];
 
     expect(dropWhile(personArr, (person: IPerson) => person.name)).toEqual([]);
@@ -46,20 +42,20 @@ describe('Array - dropWhile 메서드 테스트', () => {
     const userArr = [
       {
         active: true,
-        user: 'barney'
+        user: 'barney',
       },
       {
         active: false,
-        user: 'fred'
+        user: 'fred',
       },
       {
         active: false,
-        user: 'peblo'
-      }
+        user: 'peblo',
+      },
     ];
     const func = function(item: IUser) {
       return !item.active;
-    }
+    };
 
     expect(dropWhile(userArr, func)).toEqual(userArr);
   });

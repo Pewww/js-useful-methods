@@ -20,7 +20,7 @@ describe('Array - flatten 메서드 테스트', () => {
   });
 
   test('파라미터가 배열이 아닐 때 null 반환', () => {
-    function add (num1: number, num2: number) {
+    function add(num1: number, num2: number) {
       return num1 + num2;
     }
 

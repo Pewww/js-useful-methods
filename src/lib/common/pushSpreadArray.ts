@@ -10,7 +10,7 @@ export const pushSpreadArray = (array: any[], values: any[]) => {
   }
 
   const arrLeng = array.length,
-        valLeng = values.length;
+    valLeng = values.length;
   let idx = 0;
 
   while (idx < valLeng) {

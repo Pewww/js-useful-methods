@@ -17,8 +17,7 @@ export const intersection = (...arrays: any) => {
     const restArr = rest[i];
 
     if (Array.isArray(restArr as any)) {
-      intersectionArr = first.filter(item =>
-        restArr.includes(item));
+      intersectionArr = first.filter(item => restArr.includes(item));
     } else {
       return [];
     }

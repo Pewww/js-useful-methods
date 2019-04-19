@@ -14,8 +14,7 @@ export const nth = (array: any[], n: number = 0) => {
   let arrIndex;
 
   if (Number(n)) {
-    arrIndex = n < 0 ?
-      (arrLeng + n) : n;
+    arrIndex = n < 0 ? arrLeng + n : n;
   } else {
     arrIndex = 0;
   }

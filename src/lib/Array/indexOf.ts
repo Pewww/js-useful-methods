@@ -17,13 +17,12 @@ export const indexOf = (array: any[], value: any, fromIndex: number = 0) => {
   let arrIndex;
 
   if (Number(fromIndex)) {
-    arrIndex = fromIndex < 0 ?
-      ((arrLeng - 1) + fromIndex) : fromIndex;
+    arrIndex = fromIndex < 0 ? arrLeng - 1 + fromIndex : fromIndex;
   } else {
     arrIndex = 0;
   }
 
-  while ((arrIndex < arrLeng) && !sameValueZero(array[arrIndex], value)) {
+  while (arrIndex < arrLeng && !sameValueZero(array[arrIndex], value)) {
     arrIndex += 1;
   }
 

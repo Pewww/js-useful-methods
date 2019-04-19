@@ -3,15 +3,12 @@
  * @param predicate - The function invoked per iteration.
  * Removes all elements from array that predicate returns truthy for and returns an array of the removed elements.
  * The predicate is invoked with three arguments: (value, index, array).
- * 
+ *
  * Note: Unlike _.filter, this method mutates array.
  * Use _.pull to pull elements from an array by value.
  */
 
-export const remove = (
-  array: any[],
-  predicate: (value?: any, index?: number, predicateArray?: any[]) => any
-) => {
+export const remove = (array: any[], predicate: (value?: any, index?: number, predicateArray?: any[]) => any) => {
   if (!Array.isArray(array) || typeof predicate !== 'function') {
     return [];
   }
