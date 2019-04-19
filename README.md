@@ -186,6 +186,16 @@ predicate: The function invoked per iteration.\
 Removes all elements from array that predicate returns truthy for and returns an array of the removed elements.\
 The predicate is invoked with three arguments: (value, index, array).
 
+### Etc
+- <b>characterNotation</b>\
+Parameters: (str: String, unit: Number, character: String)\
+str: The string to add character per unit.\
+unit: The number unit to seperate a given string.\
+character: The character to add in string per unit.\
+\
+This function is created for the notation of money but, I added parameters for more usability.\
+It cuts a string by a unit from the length of string to insert a character.
+
 ## ETC
 성능이나 구조, 더욱 깔끔한 코드에 관한 이슈는 언제나 환영입니다!<br>
 Issues regarding performance, structure, and cleaner code are always welcome!
