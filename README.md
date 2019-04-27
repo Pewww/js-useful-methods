@@ -208,6 +208,12 @@ predicate: The function invoked per iteration.\
 Removes all elements from array that predicate returns truthy for and returns an array of the removed elements.\
 The predicate is invoked with three arguments: (value, index, array).
 
+- <b>reverse</b>\
+Parameters: (array: Array)\
+array: The array to modify.\
+\
+Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
+
 ##
 ### Etc
 <ul>
