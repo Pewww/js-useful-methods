@@ -22,7 +22,8 @@ import {
   nth,
   pull,
   remove,
-  reverse
+  reverse,
+  slice
 } from './lib/Array';
 import {characterNotation} from './lib/etc';
 
@@ -51,5 +52,6 @@ export default {
   nth,
   pull,
   remove,
-  reverse
+  reverse,
+  slice
 };

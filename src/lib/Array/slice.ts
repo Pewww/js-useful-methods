@@ -16,7 +16,11 @@ import {indexCondition} from "../common/indexCondition";
  * Same as Start Index Condition
  */
 
-export const slice = (array: any[], start: number = 0, end: number = array.length) => {
+export const slice = (
+  array: any[],
+  start: number = 0,
+  end: number = Array.isArray(array) ? array.length : 0
+) => {
   if (!Array.isArray(array)) {
     return [];
   }

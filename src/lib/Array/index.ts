@@ -22,6 +22,7 @@ import {nth} from './nth';
 import {pull} from './pull';
 import {remove} from './remove';
 import {reverse} from './reverse';
+import {slice} from './slice';
 
 export {
   chunk,
@@ -47,5 +48,6 @@ export {
   nth,
   pull,
   remove,
-  reverse
+  reverse,
+  slice
 };

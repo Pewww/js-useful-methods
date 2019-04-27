@@ -22,13 +22,13 @@ $ yarn add lodash-own
 ```
 
 In Node.js:
-```shell
+```javascript
 Ex. var _ = require('lodash-own').default;
 _.difference([1, 2, 3], [1, 2]); // [3]
 ```
 
 If you can use 'Import':
-```shell
+```javascript
 Ex. import _ from 'lodash-own';
 _.flatten([1, 2, [3], [4, 5]]); // [1, 2, 3, 4, 5]
 ```
@@ -213,6 +213,15 @@ Parameters: (array: Array)\
 array: The array to modify.\
 \
 Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
+
+- <b>slice</b>\
+Parameters: (array: Array, start: Number, end: Number)\
+array: The array to modify.\
+start(optional): The start position.\
+end(optional): The end position.\
+\
+Creates a slice of array from start up to, but not including, end.\
+Note: This method is used instead of Array#slice to ensure dense arrays are returned.
 
 ##
 ### Etc

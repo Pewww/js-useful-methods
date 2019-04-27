@@ -7,7 +7,7 @@
 export const indexCondition = (index: number, maxIndex: number) => {
   let filteredIndex = index;
 
-  if (typeof filteredIndex === 'number') {
+  if (typeof filteredIndex === 'number' && !!Number(filteredIndex)) {
     if (filteredIndex < 0) {
       filteredIndex = maxIndex + index;
     } else if (filteredIndex > maxIndex) {
