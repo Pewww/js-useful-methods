@@ -45,6 +45,7 @@
     "dist"
   ],
   "dependencies": {
+    "@types/node": "^11.13.8",
     "https-proxy-agent": "^2.2.1",
     "typings": "^2.1.1"
   }
