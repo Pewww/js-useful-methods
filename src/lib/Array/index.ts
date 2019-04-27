@@ -21,6 +21,7 @@ import {lastIndexOf} from './lastIndexOf';
 import {nth} from './nth';
 import {pull} from './pull';
 import {remove} from './remove';
+import {reverse} from './reverse';
 
 export {
   chunk,
@@ -46,4 +47,5 @@ export {
   nth,
   pull,
   remove,
+  reverse
 };
