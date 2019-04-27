@@ -20,7 +20,7 @@ export const findLastIndex = (
     return arrLeng - 1;
   }
 
-  let arrIndex = Number(fromIndex) && fromIndex >= 0 ? fromIndex : arrLeng - 1;
+  let arrIndex = (Number(fromIndex) && fromIndex >= 0) ? fromIndex : arrLeng - 1;
 
   while (arrIndex >= 0 && !predicate(array[arrIndex], arrIndex, array)) {
     arrIndex -= 1;
