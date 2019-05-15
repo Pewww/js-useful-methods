@@ -1,0 +1,9 @@
+export const STRING = 'string';
+export const ARRAY = 'array';
+export const NUMBER = 'number';
+export const BOOLEAN = 'boolean';
+export const OBJECT = 'object';
+export const NULL = 'null';
+export const UNDEFINED = 'undefined';
+export const FUNCTION = 'function';
+export const SYMBOL = 'symbol';
