@@ -9,4 +9,5 @@ export interface IUser {
   name: string;
 }
 
-// Others
+/* Omit */
+export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
