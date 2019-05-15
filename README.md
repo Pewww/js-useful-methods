@@ -223,6 +223,12 @@ end(optional): The end position.\
 Creates a slice of array from start up to, but not including, end.\
 Note: This method is used instead of Array#slice to ensure dense arrays are returned.
 
+- <b>tail</b>\
+Parameters: (array: Array)\
+array: The array to query.\
+\
+Gets all but the first element of array.
+
 ##
 ### Etc
 <ul>
