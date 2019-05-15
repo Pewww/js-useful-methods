@@ -23,6 +23,7 @@ import {pull} from './pull';
 import {remove} from './remove';
 import {reverse} from './reverse';
 import {slice} from './slice';
+import {tail} from './tail';
 
 export {
   chunk,
@@ -49,5 +50,6 @@ export {
   pull,
   remove,
   reverse,
-  slice
+  slice,
+  tail
 };
