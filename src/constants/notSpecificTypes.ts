@@ -1,4 +1,4 @@
-// common으로 옮길 것
+// common으로 옮길 것, key value 형식으로 변경
 
 import {
   ARRAY,
