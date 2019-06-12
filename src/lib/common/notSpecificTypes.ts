@@ -1,5 +1,9 @@
-// common으로 옮길 것, key value 형식으로 변경
+// @TODO: 함수 설명에 대한 주석 추가
 
+import {
+  TAllTypes,
+  TAllTypesToString
+} from '../../@types/jsTypes';
 import {
   ARRAY,
   BOOLEAN,
@@ -9,10 +13,8 @@ import {
   OBJECT,
   STRING,
   SYMBOL,
-  UNDEFINED,
-  TAllTypes,
-  TAllTypesToString
-} from '../../@types/jsTypes';
+  UNDEFINED
+} from '../../constants/jsTypes';
 
 interface IAllTypes {
   type: TAllTypesToString;
@@ -62,7 +64,7 @@ const ALL_TYPES: IAllTypes[] = [
   }
 ];
 
-const notSpecificTypes = (excludeType = ARRAY) =>
+const notSpecificTypes = (excludeType: TAllTypesToString) =>
   ALL_TYPES.filter(({type}) => type !== excludeType);
 
 export default notSpecificTypes;

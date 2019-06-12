@@ -1,13 +1,16 @@
 import {remove} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - remove 메서드 테스트', () => {
   test('첫 번째 파라미터가 Array 타입이 아닐 시, 빈 배열 반환', () => {
-    const firstParams = [1, 'string', NaN, undefined, null, {a: 1}];
+    const firstParams = notSpecificTypes(ARRAY);
     const predicate = (v: any) => v === 1;
 
-    const mapped = firstParams.map((v: any) => remove(v, predicate)).every(v => Array.isArray(v) && !v.length);
+    const mapped = firstParams.map((v: any) => remove(v, predicate))
+    const arrayWithEmptyArr = mapped.every(v => Array.isArray(v) && !v.length);
 
-    expect(mapped).toBe(true);
+    expect(arrayWithEmptyArr).toBe(true);
   });
 
   test('두 번째 파라미터가 Function 타입이 아닐 시, 빈 배열 반환', () => {

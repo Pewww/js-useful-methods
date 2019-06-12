@@ -1,4 +1,6 @@
 import {flatten} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - flatten 메서드 테스트', () => {
   test('Input: [1, 2, 3, 4, [5], [6, [7]]] 일 때, Output: [1, 2, 3, 4, 5, 6, [7]]', () => {
@@ -24,7 +26,7 @@ describe('Array - flatten 메서드 테스트', () => {
       return num1 + num2;
     }
 
-    const parameters = [1, 'string', undefined, add, {}, NaN, false];
+    const parameters = notSpecificTypes(ARRAY);
     const filtered = parameters.filter(v => v === null);
 
     expect(filtered).toEqual([]);

@@ -1,11 +1,13 @@
 import {flattenDeep} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - flattenDeep 메서드 테스트', () => {
   test('파라미터가 배열이 아닐 시 null 반환', () => {
-    const otherTypes = [1, 'string', {}, undefined, NaN];
+    const otherTypes = notSpecificTypes(ARRAY);
     const nullArrays = otherTypes.map(v => flattenDeep(v as any));
 
-    expect(nullArrays).toEqual([null, null, null, null, null]);
+    expect(nullArrays.every(v => v === null)).toBe(true);
   });
 
   test('Input: [1, [2, [3, [4, [5]]]]] 일 때, [1, 2, 3, 4, 5] 반환', () => {

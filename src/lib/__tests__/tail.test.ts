@@ -1,8 +1,10 @@
 import {tail} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - tail 메서드 테스트', () => {
   test('파라미터가 Array 타입이 아닐 시 [] 반환', () => {
-    const notArrayTypes = [1, 'string', NaN, undefined, null, {a: 1}];
+    const notArrayTypes = notSpecificTypes(ARRAY);
     const mapped = notArrayTypes.every(v => tail(v as any).length === 0);
 
     expect(mapped).toBe(true);

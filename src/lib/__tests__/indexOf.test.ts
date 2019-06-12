@@ -1,8 +1,10 @@
 import {indexOf} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - indexOf 메서드 테스트', () => {
   test('첫 번째 파라미터(array)의 타입이 Array가 아닐 시 -1 반환', () => {
-    const notArray = [1, 'string', undefined, null, {}, NaN, Symbol, () => 12];
+    const notArray = notSpecificTypes(ARRAY);
     const result = notArray.every(v => indexOf(v as any, 1) === -1);
 
     expect(result).toBe(true);

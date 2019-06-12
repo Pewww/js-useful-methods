@@ -1,4 +1,6 @@
 import {characterNotation} from '../etc';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {STRING} from '../../constants/jsTypes';
 
 describe('etc - characterNotation 메서드 테스트', () => {
   test(`str: '100', unit: 3, character: ',' 일 때, '100' 반환`, () => {
@@ -30,7 +32,7 @@ describe('etc - characterNotation 메서드 테스트', () => {
   });
 
   test(`str이 String 타입이 아닐 시, str 그대로 반환`, () => {
-    const notStringTypes = [1, undefined, () => 2 + 3, {a: 1, b: 2}, NaN, false, null, [1, 2]];
+    const notStringTypes = notSpecificTypes(STRING);
     const mapped = notStringTypes.map(v => characterNotation(v as any, 1, 'same'));
 
     expect(mapped).toEqual(notStringTypes);

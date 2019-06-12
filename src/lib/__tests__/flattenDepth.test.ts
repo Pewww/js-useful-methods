@@ -1,4 +1,6 @@
 import {flattenDepth} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - flattenDepth 메서드 테스트', () => {
   test('array: [1, [2, [3, [4]], 5]] 이고, depth가 주어지지 않았을 시 [1, 2, [3, [4]], 5] 반환 (depth = 1과 같음)', () => {
@@ -14,10 +16,10 @@ describe('Array - flattenDepth 메서드 테스트', () => {
   });
 
   test('첫 번째 파라미터(array)가 Array가 아닐 시 null 반환', () => {
-    const notItems = [1, 'string', NaN, undefined, {}, Symbol];
-    const mappedArray = notItems.map(item => flattenDepth(item as any, 10));
+    const notArrayTypes = notSpecificTypes(ARRAY);
+    const mappedArray = notArrayTypes.map(item => flattenDepth(item as any, 10));
 
-    expect(mappedArray).toEqual([null, null, null, null, null, null]);
+    expect(mappedArray.every(v => v === null)).toBe(true);
   });
 
   test('depth가 Number가 아니거나 1보다 작을 시 1 취급, 나머진 depth 그대로 적용', () => {
