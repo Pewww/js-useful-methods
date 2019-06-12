@@ -1,8 +1,10 @@
 import {slice} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - slice 메서드 테스트', () => {
   test('array의 타입이 Array가 아닐 시 빈 배열 반환', () => {
-    const notArrayTypes = [1, {a: 1, b: 2}, 'string', NaN, Symbol, undefined];
+    const notArrayTypes = notSpecificTypes(ARRAY);
     const mapped = notArrayTypes.every(v => slice(v as any).length === 0);
 
     expect(mapped).toBe(true);

@@ -1,12 +1,15 @@
-import {IPerson, IUser} from '../../types';
+import {IPerson, IUser} from '../../@types/drop';
 import {dropRightWhile} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - dropRightWhile 메서드 테스트', () => {
   test('첫 번째 파라미터(array)가 배열이 아닌 경우 null 반환', () => {
-    const notArrayTypes = [1, 'hello', {a: 'do'}, undefined, (v: any) => v];
+    const notArrayTypes = notSpecificTypes(ARRAY);
     const nullArray = notArrayTypes.map(item => dropRightWhile(item as any));
 
-    expect(nullArray).toEqual([null, null, null, null, null]);
+    expect(nullArray.length).toBe(9);
+    expect(nullArray.every(v => v === null)).toBe(true);
   });
 
   test('두 번째 파라미터(predicate)가 함수가 아닌 경우 배열 그대로 반환', () => {

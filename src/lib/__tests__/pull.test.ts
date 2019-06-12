@@ -1,8 +1,10 @@
 import {pull} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - pull 메서드 테스트', () => {
   test('첫 번째 파라미터의 타입이 Array가 아닐 시, 그대로 값 반환', () => {
-    const arr = [1, 'string', undefined, {a: 1, b: 2}, NaN, false, null];
+    const arr = notSpecificTypes(ARRAY);
     const mappedArr = arr.map(v => pull(v as any, 1));
 
     expect(mappedArr).toEqual(arr);

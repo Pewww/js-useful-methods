@@ -1,9 +1,11 @@
 import {reverse} from '../Array';
 import {sameValueZero} from '../common/sameValueZero';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - reverse 메서드 테스트', () => {
   test('파라미터의 타입이 Array가 아닐 시 받은 값 그대로 반환', () => {
-    const notArrayTypes = [1, {a: 1, b: 2}, 'string', NaN, Symbol, undefined];
+    const notArrayTypes = notSpecificTypes(ARRAY);
     const mapped = notArrayTypes.filter((v, idx, arr) =>
       sameValueZero(reverse(v as any), arr[idx]));
 

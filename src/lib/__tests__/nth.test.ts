@@ -1,8 +1,10 @@
 import {nth} from '../Array';
+import notSpecificTypes from '../common/notSpecificTypes';
+import {ARRAY} from '../../constants/jsTypes';
 
 describe('Array - nth 메서드 테스트', () => {
   test('파라미터의 타입이 배열이 아닐 시 undefined 반환', () => {
-    const arr = [1, 'hello', {obj: undefined}, null, undefined, NaN, false, 0, Symbol];
+    const arr = notSpecificTypes(ARRAY);
     expect(arr.every(v => nth(v as any) === undefined)).toBe(true);
   });
 

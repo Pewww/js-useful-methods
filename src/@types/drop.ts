@@ -8,5 +8,3 @@ export interface IUser {
   active: boolean;
   name: string;
 }
-
-// Others
