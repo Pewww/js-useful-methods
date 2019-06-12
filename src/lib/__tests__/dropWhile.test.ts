@@ -1,4 +1,4 @@
-import {IPerson, IUser} from '../../types';
+import {IPerson, IUser} from '../../@types/drop';
 import {dropWhile} from '../Array';
 
 describe('Array - dropWhile 메서드 테스트', () => {
