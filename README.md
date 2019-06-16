@@ -1,8 +1,8 @@
-# Lodash-Own
-Lodash 라이브러리를 구현하기 위해 만든 레포지토리입니다.<br>
-It's a repository to implement own Lodash library.
+# Js-Useful-Methods
+Lodash, Underscore와 같은 유용한 자바스크립트 메서드 라이브러리 입니다!<br>
+Implementation of Javascript Useful methods!
 
-<a href="https://www.npmjs.com/package/lodash-own" target="_blank">https://www.npmjs.com/package/lodash-own</a>
+<a href="https://www.npmjs.com/package/js-useful-methods" target="_blank">https://www.npmjs.com/package/js-useful-methods</a>
 
 ## Intro
 기본적으로, 기본 타입(Primitive values) 관련 메서드들을 우선적으로 구현한 후, 차근차근 완성시켜보려 합니다.<br>
@@ -14,22 +14,22 @@ When the implementation is almost complete, I will also add documentation to hel
 ## Installation
 Using npm:
 ```shell
-$ npm i lodash-own
+$ npm i js-useful-methods
 ```
 Using yarn:
 ```shell
-$ yarn add lodash-own
+$ yarn add js-useful-methods
 ```
 
 In Node.js:
 ```javascript
-Ex. var _ = require('lodash-own').default;
+Ex. var _ = require('js-useful-methods').default;
 _.difference([1, 2, 3], [1, 2]); // [3]
 ```
 
 If you can use 'Import':
 ```javascript
-Ex. import _ from 'lodash-own';
+Ex. import _ from 'js-useful-methods';
 _.flatten([1, 2, [3], [4, 5]]); // [1, 2, 3, 4, 5]
 ```
 

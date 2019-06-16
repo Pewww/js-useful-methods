@@ -1,7 +1,7 @@
 {
-  "name": "lodash-own",
+  "name": "js-useful-methods",
   "version": "0.2.31",
-  "description": "Pewww's own Lodash library",
+  "description": "Useful and helpful javascript methods library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -17,17 +17,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pewww/Lodash-Own"
+    "url": "git+https://github.com/Pewww/js-useful-methods"
   },
   "keywords": [
     "lodash",
     "methods library",
-    "underscore"
+    "underscore",
+    "js methods"
   ],
   "author": "Pewww <jung22337@naver.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pewww/Lodash-Own"
+    "url": "https://github.com/Pewww/js-useful-methods"
   },
   "devDependencies": {
     "@types/jest": "^24.0.9",

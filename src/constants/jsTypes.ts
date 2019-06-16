@@ -1,13 +1,13 @@
 import {
-  TString,
   TArray,
-  TNumber,
   TBoolean,
-  TObject,
-  TNull,
-  TUndefined,
   TFunction,
-  TSymbol
+  TNull,
+  TNumber,
+  TObject,
+  TString,
+  TSymbol,
+  TUndefined
 } from '../@types/jsTypes';
 
 export const STRING: TString = 'string';
