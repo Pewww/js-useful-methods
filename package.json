@@ -1,6 +1,6 @@
 {
   "name": "js-useful-methods",
-  "version": "0.2.31",
+  "version": "0.2.4",
   "description": "Useful and helpful javascript methods library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

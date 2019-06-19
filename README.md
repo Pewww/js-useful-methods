@@ -229,6 +229,13 @@ array: The array to query.\
 \
 Gets all but the first element of array.
 
+- <b>take</b>\
+Parameters: (array: Array, n: Number)\
+array: The array to query.\
+n(optional): The number of elements to take.\
+\
+Creates a slice of array with n elements taken from the beginning.
+
 ##
 ### Etc
 <ul>
