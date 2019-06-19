@@ -24,6 +24,7 @@ import {remove} from './remove';
 import {reverse} from './reverse';
 import {slice} from './slice';
 import {tail} from './tail';
+import {take} from './take';
 
 export {
   chunk,
@@ -51,5 +52,6 @@ export {
   remove,
   reverse,
   slice,
-  tail
+  tail,
+  take
 };
